@@ -1,0 +1,14 @@
+{
+    "ts-node": {
+        "esm": true
+    },
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "lib": ["ES2021"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "target": "ES2021",
+        "resolveJsonModule": true,
+        "types": ["jest", "node"]
+    }
+}
