@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "test": "jest",
+    "test-1": "node --experimental-vm-modules ./node_modules/.bin/jest",
+    "test-2": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test-3": "node --experimental-specifier-resolution=node --loader ts-node/esm --experimental-vm-modules ./node_modules/.bin/jest",
+    "test-4": "node --experimental-vm-modules --experimental-specifier-resolution=node --loader ts-node/esm --experimental-vm-modules ./node_modules/.bin/jest",
     "start": "node --experimental-specifier-resolution=node --loader ts-node/esm app.ts"
   },
   "type": "module",
