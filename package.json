@@ -2,7 +2,7 @@
   "name": "test-import-json",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --no-cache",
     "start": "node --experimental-specifier-resolution=node --loader ts-node/esm app.ts"
   },
   "type": "module",
